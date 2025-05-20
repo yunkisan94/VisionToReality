@@ -45,8 +45,8 @@ export default function Background3D() {
       new THREE.BoxGeometry(2, 2, 2)  // 정육면체 크기 더 증가
     ];
     
-    // 파스텔 톤 색상 사용
-    const color = 0xffa0c0; // 파스텔 핑크
+    // 파스텔 블루 톤 색상 사용
+    const color = 0x80b0ff; // 파스텔 블루
 
     // 5개의 다양한 3D 객체 생성
     for (let i = 0; i < 5; i++) {
