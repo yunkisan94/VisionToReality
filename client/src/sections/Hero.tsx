@@ -31,7 +31,7 @@ export default function Hero() {
             animate="show"
           >
             <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-900 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-900 leading-tight whitespace-nowrap"
               variants={item}
             >
               <span className="text-primary">당신과 함께 꿈을 현실로,</span> {name}
