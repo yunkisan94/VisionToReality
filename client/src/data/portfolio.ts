@@ -54,7 +54,7 @@ export const portfolioData = {
     {
       title: "Orpu 온라인 스토어",
       description: "디지털 제품과 가전제품을 중심으로 한 전문 온라인 스토어. 혁신적인 제품 큐레이션과 기술 지원 서비스 제공.",
-      image: "https://images.unsplash.com/photo-1563203369-26f2e4a5ccb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
       technologies: ["제품 개발", "공급망 관리", "기술 지원"],
       url: "#"
     },
