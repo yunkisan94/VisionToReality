@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { portfolioData } from "@/data/portfolio";
 
 export default function Hero() {
-  const { name, role, intro, profileImage, clients } = portfolioData;
+  const { name, role, intro, philosophy, profileImage, clients } = portfolioData;
 
   const container = {
     hidden: { opacity: 0 },
@@ -51,6 +51,13 @@ export default function Hero() {
               {intro}
             </motion.p>
             
+            <motion.blockquote 
+              className="text-lg italic text-primary-700 max-w-xl border-l-4 border-primary pl-4 my-4"
+              variants={item}
+            >
+              {philosophy}
+            </motion.blockquote>
+            
             <motion.div 
               className="flex flex-wrap justify-center md:justify-start gap-4 pt-4"
               variants={item}
@@ -68,7 +75,7 @@ export default function Hero() {
                 className="border-primary text-primary hover:bg-primary/10"
                 asChild
               >
-                <a href="#projects">작업 보기</a>
+                <a href="#projects">사업 보기</a>
               </Button>
             </motion.div>
           </motion.div>

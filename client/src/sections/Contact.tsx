@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { RectangleEllipsis, Phone, MapPin } from "lucide-react";
+import { RectangleEllipsis, Phone, MapPin, MessageSquare } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -81,6 +81,12 @@ export default function Contact() {
       title: "전화번호", 
       value: contact.phone,
       link: `tel:${contact.phone.replace(/[\s-]/g, "")}`
+    },
+    { 
+      icon: <MessageSquare className="text-primary h-6 w-6" />, 
+      title: "카카오톡", 
+      value: "ID: yugicompany",
+      link: "https://open.kakao.com/o/yugicompany"
     },
     { 
       icon: <MapPin className="text-primary h-6 w-6" />, 
