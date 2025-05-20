@@ -38,15 +38,15 @@ export default function Background3D() {
     
     // 다양한 geometry 타입 배열
     const geometries = [
-      new THREE.IcosahedronGeometry(1, 0),
-      new THREE.TorusGeometry(0.7, 0.3, 16, 100),
-      new THREE.OctahedronGeometry(1, 0),
-      new THREE.TetrahedronGeometry(1.5, 0), // 정사면체 크기 증가
-      new THREE.BoxGeometry(1.5, 1.5, 1.5)  // 정육면체 크기 증가
+      new THREE.IcosahedronGeometry(1.3, 0),
+      new THREE.TorusGeometry(0.9, 0.3, 16, 100),
+      new THREE.OctahedronGeometry(1.2, 0),
+      new THREE.TetrahedronGeometry(2, 0), // 정사면체 크기 더 증가
+      new THREE.BoxGeometry(2, 2, 2)  // 정육면체 크기 더 증가
     ];
     
     // 모든 객체에 동일한 색상 사용
-    const color = 0x4895ef; // 파란색
+    const color = 0x60a5fa; // 더 밝은 파란색
 
     // 5개의 다양한 3D 객체 생성
     for (let i = 0; i < 5; i++) {
