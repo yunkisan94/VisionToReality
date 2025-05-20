@@ -9,7 +9,7 @@ export const portfolioData = {
   about: {
     title: "혁신적인 비즈니스를 구축하는",
     subtitle: "사업가",
-    image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000",
+    image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000",
     paragraphs: [
       "안녕하세요, 저는 윤기산입니다. 현재 Witter, Orpu, Haute 세 개의 온라인 쇼핑몰을 운영하는 개인 사업자입니다. 고객 경험을 중심으로 한 쇼핑몰 운영과 시장 변화에 빠르게 대응하는 전략을 통해 지속적인 성장을 이루고 있습니다.",
       "온라인 쇼핑몰 외에도 주거용/상업용 부동산 매매와 임대업을 활발히 진행하고 있으며, 가상자산 현물 및 선물 투자에도 깊은 관심을 가지고 있습니다. 다양한 분야에서의 경험을 바탕으로 새로운 가치와 기회를 창출하는 것이 저의 비즈니스 철학입니다."

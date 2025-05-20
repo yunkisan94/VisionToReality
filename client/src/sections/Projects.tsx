@@ -9,7 +9,7 @@ export default function Projects() {
   const { projects } = portfolioData;
   
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -18,10 +18,10 @@ export default function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-dark-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             <span className="inline-block pb-2 border-b-4 border-primary">프로젝트 & 작품</span>
           </h2>
-          <p className="mt-4 text-lg text-dark-700 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             최근에 작업한 프로젝트들을 소개합니다.
           </p>
         </motion.div>

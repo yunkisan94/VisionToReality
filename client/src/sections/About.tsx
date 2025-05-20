@@ -20,7 +20,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -29,10 +29,10 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-dark-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             <span className="inline-block pb-2 border-b-4 border-primary">나에 대해서</span>
           </h2>
-          <p className="mt-4 text-lg text-dark-700 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             저를 더 잘 알 수 있도록 제 이야기를 소개합니다.
           </p>
         </motion.div>
