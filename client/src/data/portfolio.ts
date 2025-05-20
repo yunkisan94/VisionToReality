@@ -45,22 +45,22 @@ export const portfolioData = {
   
   projects: [
     {
-      title: "Witter 온라인 쇼핑몰",
+      title: "Witter",
       description: "패션과 라이프스타일 제품을 판매하는 프리미엄 온라인 쇼핑몰. 독특한 고객 경험과 고품질 제품으로 차별화.",
       image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
       technologies: ["이커머스", "디지털 마케팅", "고객 관리"],
       url: "#"
     },
     {
-      title: "Orpu 온라인 스토어",
+      title: "Orpu",
       description: "디지털 제품과 가전제품을 중심으로 한 전문 온라인 스토어. 혁신적인 제품 큐레이션과 기술 지원 서비스 제공.",
       image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
       technologies: ["제품 개발", "공급망 관리", "기술 지원"],
       url: "#"
     },
     {
-      title: "Haute 온라인 스토어",
-      description: "홈 인테리어와 생활용품을 판매하는 프리미엄 쇼핑몰. 공간별 맞춤형 제품 큐레이션과 홈스타일링 서비스로 차별화된 쇼핑 경험 제공.",
+      title: "Haute",
+      description: "홈 인테리어와 생활용품을 판매하는 프리미엄 온라인 스토어. 공간별 맞춤형 제품 큐레이션과 홈스타일링 서비스로 차별화된 쇼핑 경험 제공.",
       image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
       technologies: ["인테리어 솔루션", "홈스타일링", "맞춤형 서비스"],
       url: "#"
