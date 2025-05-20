@@ -94,26 +94,33 @@ export default function Hero() {
           </motion.div>
         </div>
         
-        <div className="mt-24 flex flex-wrap justify-center md:justify-between items-center gap-8 text-gray-400">
-          <p className="text-center w-full md:w-auto font-medium text-dark-700">클라이언트 & 협업:</p>
-          
-          <div className="flex flex-wrap justify-center gap-8">
-            {clients.map((client, index) => (
-              <motion.div
-                key={index}
-                className="grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 * index + 0.8 }}
-              >
-                <img 
-                  src={client.logo} 
-                  alt={`${client.name} 로고`} 
-                  className="h-8" 
-                />
-              </motion.div>
-            ))}
-          </div>
+        <div className="mt-24">
+          <motion.div
+            className="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8 }}
+          >
+            <h3 className="text-center font-semibold text-dark-800 mb-4">전문 분야</h3>
+            <div className="flex flex-wrap justify-center gap-6">
+              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
+                <span className="w-3 h-3 bg-primary rounded-full"></span>
+                <span className="text-dark-700">온라인 쇼핑몰</span>
+              </div>
+              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
+                <span className="w-3 h-3 bg-primary rounded-full"></span>
+                <span className="text-dark-700">부동산 투자</span>
+              </div>
+              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
+                <span className="w-3 h-3 bg-primary rounded-full"></span>
+                <span className="text-dark-700">가상자산</span>
+              </div>
+              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
+                <span className="w-3 h-3 bg-primary rounded-full"></span>
+                <span className="text-dark-700">비즈니스 전략</span>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
