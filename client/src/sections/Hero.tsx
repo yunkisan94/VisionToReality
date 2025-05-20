@@ -32,12 +32,12 @@ export default function Hero() {
           >
             <motion.div variants={item}>
               <h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-900 leading-tight whitespace-nowrap"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight whitespace-nowrap"
               >
                 <span className="text-primary">당신과 함께 꿈을 현실로,</span>
               </h1>
               <h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-900 leading-tight mt-2"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-2"
               >
                 {name}
               </h1>
