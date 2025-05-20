@@ -45,32 +45,26 @@ export default function Background3D() {
       new THREE.BoxGeometry(1, 1, 1)
     ];
     
-    // 색상 배열
-    const colors = [
-      0x2a9d8f, // 청록색
-      0xe76f51, // 주황색
-      0xe9c46a, // 노란색
-      0x4895ef, // 파란색
-      0x4361ee  // 보라색
-    ];
+    // 모든 객체에 동일한 색상 사용
+    const color = 0x4895ef; // 파란색
 
     // 5개의 다양한 3D 객체 생성
     for (let i = 0; i < 5; i++) {
       const geometry = geometries[i % geometries.length];
       const material = new THREE.MeshPhongMaterial({
-        color: colors[i % colors.length],
+        color: color,
         wireframe: true,
         transparent: true,
-        opacity: 0.7
+        opacity: 0.8
       });
       
       const mesh = new THREE.Mesh(geometry, material);
-      mesh.position.x = (Math.random() - 0.5) * 12;
-      mesh.position.y = (Math.random() - 0.5) * 12;
-      mesh.position.z = (Math.random() - 0.5) * 12;
+      mesh.position.x = (Math.random() - 0.5) * 15;
+      mesh.position.y = (Math.random() - 0.5) * 15;
+      mesh.position.z = (Math.random() - 0.5) * 15;
       mesh.rotation.x = Math.random() * Math.PI;
       mesh.rotation.y = Math.random() * Math.PI;
-      mesh.scale.setScalar(Math.random() * 1.0 + 0.5);
+      mesh.scale.setScalar(Math.random() * 1.5 + 1.0); // 더 큰 크기로 조정
       scene.add(mesh);
       objects.push(mesh);
     }
