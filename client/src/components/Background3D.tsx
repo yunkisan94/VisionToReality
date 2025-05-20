@@ -48,13 +48,13 @@ export default function Background3D() {
     // 파스텔 블루 톤 색상 사용
     const color = 0x80b0ff; // 파스텔 블루
 
-    // 5개의 다양한 3D 객체 생성 - 화면에 더 가깝게 배치
+    // 5개의 다양한 3D 객체 생성 - 화면 측면에 배치하여 텍스트와 겹치지 않게
     const positions = [
-      { x: -15, y: 8, z: -10 },
-      { x: 15, y: -10, z: -8 },
-      { x: 5, y: 15, z: -15 },
-      { x: -12, y: -12, z: -12 },
-      { x: 10, y: 0, z: -18 }
+      { x: -25, y: 15, z: -20 },  // 왼쪽 상단
+      { x: 25, y: 15, z: -15 },   // 오른쪽 상단
+      { x: -25, y: -15, z: -18 }, // 왼쪽 하단
+      { x: 25, y: -15, z: -20 },  // 오른쪽 하단
+      { x: 0, y: -25, z: -30 }    // 하단 중앙
     ];
     
     for (let i = 0; i < 5; i++) {
@@ -63,8 +63,7 @@ export default function Background3D() {
         color: color,
         wireframe: true,
         transparent: true,
-        opacity: 0.9, // 더 선명하게 보이도록 투명도 조정
-        linewidth: 2 // 선 두께 키우기 (일부 브라우저에서 지원됨)
+        opacity: 0.6 // 투명도를 낮춰서 텍스트가 더 잘 보이도록 조정
       });
       
       const mesh = new THREE.Mesh(geometry, material);
@@ -143,7 +142,7 @@ export default function Background3D() {
   return (
     <div 
       ref={containerRef} 
-      className="fixed top-0 left-0 w-full h-full z-0"
+      className="fixed top-0 left-0 w-full h-full -z-10"
       style={{ pointerEvents: 'none' }}
     />
   );

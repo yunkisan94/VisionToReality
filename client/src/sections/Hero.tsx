@@ -32,33 +32,33 @@ export default function Hero() {
           >
             <motion.div variants={item}>
               <h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight whitespace-nowrap"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight whitespace-nowrap relative z-10"
               >
                 <span className="text-primary">Your vision to Our reality</span>
               </h1>
               <h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mt-2"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mt-2 relative z-10"
               >
                 {name}
               </h1>
             </motion.div>
             
             <motion.p 
-              className="text-xl md:text-2xl text-foreground font-light"
+              className="text-xl md:text-2xl text-foreground font-light relative z-10"
               variants={item}
             >
               {role}
             </motion.p>
             
             <motion.p 
-              className="text-lg text-foreground max-w-xl"
+              className="text-lg text-foreground max-w-xl relative z-10"
               variants={item}
             >
               {intro}
             </motion.p>
             
             <motion.blockquote 
-              className="text-lg italic text-primary max-w-xl border-l-4 border-primary pl-4 my-4"
+              className="text-lg italic text-primary max-w-xl border-l-4 border-primary pl-4 my-4 relative z-10"
               variants={item}
             >
               {philosophy}
