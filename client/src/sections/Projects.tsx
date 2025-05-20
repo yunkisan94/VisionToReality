@@ -19,10 +19,10 @@ export default function Projects() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            <span className="inline-block pb-2 border-b-4 border-primary">프로젝트 & 작품</span>
+            <span className="inline-block pb-2 border-b-4 border-primary">비즈니스 포트폴리오</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-            최근에 작업한 프로젝트들을 소개합니다.
+            다양한 산업 분야에서의 혁신적인 비즈니스 활동을 소개합니다.
           </p>
         </motion.div>
         
@@ -89,12 +89,10 @@ export default function Projects() {
             className="border-primary text-primary hover:bg-primary/10"
           >
             <a 
-              href="https://github.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="#contact"
               className="flex items-center gap-2"
             >
-              더 많은 프로젝트 보기
+              비즈니스 제휴 문의
               <ExternalLink className="h-4 w-4" />
             </a>
           </Button>
