@@ -59,23 +59,23 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-bold text-dark-900">
+            <h3 className="text-2xl font-bold text-foreground">
               {about.title} <span className="text-primary">{about.subtitle}</span>
             </h3>
             
-            <p className="text-dark-700">
+            <p className="text-muted-foreground">
               {about.paragraphs[0]}
             </p>
             
-            <p className="text-dark-700">
+            <p className="text-muted-foreground">
               {about.paragraphs[1]}
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4">
               {achievements.map((item, index) => (
-                <div key={index} className="flex items-center gap-2">
+                <div key={index} className="flex items-center gap-2 bg-background p-3 rounded-lg shadow-sm">
                   {item.icon}
-                  <span className="text-dark-700">{item.text}</span>
+                  <span className="text-muted-foreground">{item.text}</span>
                 </div>
               ))}
             </div>
