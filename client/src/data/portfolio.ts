@@ -97,20 +97,20 @@ export const portfolioData = {
   
   clients: [
     { 
-      name: "온라인 쇼핑몰 구축", 
-      logo: "https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
+      name: "디지털 마케팅 에이전시", 
+      logo: "https://images.unsplash.com/photo-1557837981-97333d50518a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
     },
     { 
-      name: "부동산 투자 컨설팅", 
-      logo: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
+      name: "제품 공급업체", 
+      logo: "https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
     },
     { 
-      name: "가상자산 투자 분석", 
-      logo: "https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
+      name: "물류 서비스", 
+      logo: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
     },
     { 
-      name: "비즈니스 전략 수립", 
-      logo: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
+      name: "웹 개발 스튜디오", 
+      logo: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
     }
   ]
 };
