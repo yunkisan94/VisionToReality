@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: 210 40% 99%;
-  --foreground: 222 40% 12%;
-  --muted: 210 40% 96%;
-  --muted-foreground: 215 25% 40%;
-  --popover: 210 40% 99%;
-  --popover-foreground: 222 40% 12%;
-  --card: 210 40% 99%;
-  --card-foreground: 222 40% 12%;
-  --border: 214 32% 94%;
-  --input: 214 32% 94%;
-  --primary: 217 91% 65%;
-  --primary-foreground: 210 40% 99%;
-  --secondary: 210 40% 96%;
-  --secondary-foreground: 222 40% 12%;
-  --accent: 217 91% 65%;
-  --accent-foreground: 210 40% 99%;
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 40% 99%;
-  --ring: 217 91% 65%;
+  --background: 183 70% 99%;
+  --foreground: 195 80% 20%;
+  --muted: 183 60% 96%;
+  --muted-foreground: 195 40% 35%;
+  --popover: 183 70% 99%;
+  --popover-foreground: 195 80% 20%;
+  --card: 183 70% 99%;
+  --card-foreground: 195 80% 20%;
+  --border: 183 60% 94%;
+  --input: 183 60% 94%;
+  --primary: 195 85% 50%;
+  --primary-foreground: 183 70% 99%;
+  --secondary: 183 60% 96%;
+  --secondary-foreground: 195 80% 20%;
+  --accent: 220 85% 60%;
+  --accent-foreground: 183 70% 99%;
+  --destructive: 350 80% 55%;
+  --destructive-foreground: 183 70% 99%;
+  --ring: 195 85% 50%;
   --radius: 0.5rem;
   }
   .dark {
