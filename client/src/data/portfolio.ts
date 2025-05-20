@@ -82,9 +82,9 @@ export const portfolioData = {
   ],
   
   contact: {
-    email: "contact@yugicompany.com",
-    phone: "+82 10-9876-5432",
-    location: "서울특별시 강남구 테헤란로"
+    email: "yunkisan94@naver.com",
+    phone: "+82 10-3492-5790",
+    location: "서울특별시 마포구 서강로"
   },
   
   socialMedia: [

@@ -85,8 +85,8 @@ export default function Contact() {
     { 
       icon: <MessageSquare className="text-primary h-6 w-6" />, 
       title: "카카오톡", 
-      value: "ID: yugicompany",
-      link: "https://open.kakao.com/o/yugicompany"
+      value: "ID: yunkisan94",
+      link: "https://open.kakao.com/o/yunkisan94"
     },
     { 
       icon: <MapPin className="text-primary h-6 w-6" />, 
