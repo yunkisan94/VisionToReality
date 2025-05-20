@@ -103,22 +103,38 @@ export default function Hero() {
           >
             <h3 className="text-center font-semibold text-dark-800 mb-4">전문 분야</h3>
             <div className="flex flex-wrap justify-center gap-6">
-              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
-                <span className="w-3 h-3 bg-primary rounded-full"></span>
-                <span className="text-dark-700">온라인 쇼핑몰</span>
-              </div>
-              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
-                <span className="w-3 h-3 bg-primary rounded-full"></span>
-                <span className="text-dark-700">부동산 투자</span>
-              </div>
-              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
-                <span className="w-3 h-3 bg-primary rounded-full"></span>
-                <span className="text-dark-700">가상자산</span>
-              </div>
-              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
-                <span className="w-3 h-3 bg-primary rounded-full"></span>
-                <span className="text-dark-700">비즈니스 전략</span>
-              </div>
+              {[
+                { 
+                  title: "온라인 쇼핑몰", 
+                  description: "Witter, Orpu, Haute 세 개의 쇼핑몰을 성공적으로 운영하며 디지털 마케팅, 고객 경험 최적화, 시장 트렌드 분석 등의 전문성을 보유하고 있습니다." 
+                },
+                { 
+                  title: "부동산 투자", 
+                  description: "주거용 및 상업용 부동산 포트폴리오를 구축하고 관리하며, 투자자산운용사 자격증을 바탕으로 한 체계적인 자산 운용 전략을 수립합니다." 
+                },
+                { 
+                  title: "가상자산", 
+                  description: "크리에이티브힐에서의 STO 및 DeFi 사업 전략 수립 경험을 기반으로 가상자산 현물 및 선물 투자에 관한 전문적인 분석과 전략을 구사합니다." 
+                },
+                { 
+                  title: "비즈니스 전략", 
+                  description: "트위니 전략기획팀 및 산업은행에서의 6년 경력을 통해 중장기 전략 수립, 신사업 발굴, 시장 분석 등 전략적 비즈니스 사고에 전문성을 갖추고 있습니다." 
+                }
+              ].map((field, index) => (
+                <div 
+                  key={index} 
+                  className="group relative cursor-pointer"
+                  onClick={() => {}}
+                >
+                  <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full z-10 relative hover:bg-primary/20 transition-colors">
+                    <span className="w-3 h-3 bg-primary rounded-full"></span>
+                    <span className="text-dark-700">{field.title}</span>
+                  </div>
+                  <div className="absolute top-full left-0 mt-2 bg-white p-4 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 w-64">
+                    <p className="text-sm text-muted-foreground">{field.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>
