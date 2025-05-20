@@ -34,7 +34,7 @@ export default function Hero() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-900 leading-tight"
               variants={item}
             >
-              <span className="text-primary">비전을 현실로,</span> {name}
+              <span className="text-primary">당신과 함께 꿈을 현실로,</span> {name}
             </motion.h1>
             
             <motion.p 
