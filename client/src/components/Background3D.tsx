@@ -41,8 +41,8 @@ export default function Background3D() {
       new THREE.IcosahedronGeometry(1, 0),
       new THREE.TorusGeometry(0.7, 0.3, 16, 100),
       new THREE.OctahedronGeometry(1, 0),
-      new THREE.TetrahedronGeometry(1, 0),
-      new THREE.BoxGeometry(1, 1, 1)
+      new THREE.TetrahedronGeometry(1.5, 0), // 정사면체 크기 증가
+      new THREE.BoxGeometry(1.5, 1.5, 1.5)  // 정육면체 크기 증가
     ];
     
     // 모든 객체에 동일한 색상 사용
