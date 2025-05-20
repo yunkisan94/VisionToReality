@@ -15,7 +15,7 @@ export default function Background3D() {
       0.1, 
       1000
     );
-    camera.position.z = 15; // 카메라 위치를 더 멀리해서 큰 객체들이 잘 보이게
+    camera.position.z = 20; // 카메라 위치를 더욱 멀리해서 초대형 객체들이 잘 보이게
 
     const renderer = new THREE.WebGLRenderer({ 
       antialias: true,
@@ -36,25 +36,25 @@ export default function Background3D() {
     // 3D 오브젝트 생성
     const objects: THREE.Mesh[] = [];
     
-    // 다양한 geometry 타입 배열 - 훨씬 더 큰 크기로
+    // 다양한 geometry 타입 배열 - 초대형 크기로
     const geometries = [
-      new THREE.IcosahedronGeometry(4.0, 0),
-      new THREE.TorusGeometry(3.5, 0.8, 16, 100),
-      new THREE.OctahedronGeometry(4.5, 0),
-      new THREE.TetrahedronGeometry(5.5, 0), // 정사면체 크기 대폭 증가
-      new THREE.BoxGeometry(5.0, 5.0, 5.0)  // 정육면체 크기 대폭 증가
+      new THREE.IcosahedronGeometry(7.0, 0),
+      new THREE.TorusGeometry(6.5, 1.2, 16, 100),
+      new THREE.OctahedronGeometry(8.0, 0),
+      new THREE.TetrahedronGeometry(9.0, 0), // 정사면체 크기 초대형으로
+      new THREE.BoxGeometry(8.5, 8.5, 8.5)  // 정육면체 크기 초대형으로
     ];
     
     // 파스텔 블루 톤 색상 사용
     const color = 0x80b0ff; // 파스텔 블루
 
-    // 5개의 다양한 3D 객체 생성 - 더 넓게 분포하고 화면 중앙에 가깝게
+    // 5개의 다양한 3D 객체 생성 - 화면에 더 가깝게 배치
     const positions = [
-      { x: -20, y: 5, z: -20 },
-      { x: 20, y: -8, z: -15 },
-      { x: 8, y: 15, z: -25 },
-      { x: -12, y: -15, z: -18 },
-      { x: 15, y: -5, z: -30 }
+      { x: -15, y: 8, z: -10 },
+      { x: 15, y: -10, z: -8 },
+      { x: 5, y: 15, z: -15 },
+      { x: -12, y: -12, z: -12 },
+      { x: 10, y: 0, z: -18 }
     ];
     
     for (let i = 0; i < 5; i++) {
@@ -63,7 +63,8 @@ export default function Background3D() {
         color: color,
         wireframe: true,
         transparent: true,
-        opacity: 0.7
+        opacity: 0.9, // 더 선명하게 보이도록 투명도 조정
+        linewidth: 2 // 선 두께 키우기 (일부 브라우저에서 지원됨)
       });
       
       const mesh = new THREE.Mesh(geometry, material);
