@@ -34,7 +34,7 @@ export default function Hero() {
               <h1 
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight whitespace-nowrap"
               >
-                <span className="text-primary">당신과 함께 꿈을 현실로,</span>
+                <span className="text-primary">Your vision to Our reality,</span>
               </h1>
               <h1 
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-2"
