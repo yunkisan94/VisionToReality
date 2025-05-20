@@ -20,7 +20,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-muted/50">
+    <section id="about" className="py-20 bg-gradient-to-br from-white to-sky-50">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
