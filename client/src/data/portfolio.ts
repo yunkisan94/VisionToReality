@@ -97,20 +97,20 @@ export const portfolioData = {
   
   clients: [
     { 
-      name: "주요 파트너사", 
-      logo: "https://via.placeholder.com/120x60?text=Partner+1" 
+      name: "온라인 쇼핑몰 구축", 
+      logo: "https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
     },
     { 
-      name: "투자사", 
-      logo: "https://via.placeholder.com/120x60?text=Investor" 
+      name: "부동산 투자 컨설팅", 
+      logo: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
     },
     { 
-      name: "협력사", 
-      logo: "https://via.placeholder.com/120x60?text=Collaboration" 
+      name: "가상자산 투자 분석", 
+      logo: "https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
     },
     { 
-      name: "공급업체", 
-      logo: "https://via.placeholder.com/120x60?text=Supplier" 
+      name: "비즈니스 전략 수립", 
+      logo: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=60&w=120&crop=edges" 
     }
   ]
 };
