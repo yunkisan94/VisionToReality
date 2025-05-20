@@ -35,23 +35,42 @@ export default function Background3D() {
 
     // 3D 오브젝트 생성
     const objects: THREE.Mesh[] = [];
-    const geometry = new THREE.IcosahedronGeometry(1, 0);
-    const material = new THREE.MeshPhongMaterial({
-      color: 0x2a9d8f,
-      wireframe: true,
-      transparent: true,
-      opacity: 0.8
-    });
+    
+    // 다양한 geometry 타입 배열
+    const geometries = [
+      new THREE.IcosahedronGeometry(1, 0),
+      new THREE.TorusGeometry(0.7, 0.3, 16, 100),
+      new THREE.OctahedronGeometry(1, 0),
+      new THREE.TetrahedronGeometry(1, 0),
+      new THREE.BoxGeometry(1, 1, 1)
+    ];
+    
+    // 색상 배열
+    const colors = [
+      0x2a9d8f, // 청록색
+      0xe76f51, // 주황색
+      0xe9c46a, // 노란색
+      0x4895ef, // 파란색
+      0x4361ee  // 보라색
+    ];
 
-    // 여러 3D 객체 생성
-    for (let i = 0; i < 10; i++) {
-      const mesh = new THREE.Mesh(geometry, material.clone());
-      mesh.position.x = (Math.random() - 0.5) * 10;
-      mesh.position.y = (Math.random() - 0.5) * 10;
-      mesh.position.z = (Math.random() - 0.5) * 10;
+    // 5개의 다양한 3D 객체 생성
+    for (let i = 0; i < 5; i++) {
+      const geometry = geometries[i % geometries.length];
+      const material = new THREE.MeshPhongMaterial({
+        color: colors[i % colors.length],
+        wireframe: true,
+        transparent: true,
+        opacity: 0.7
+      });
+      
+      const mesh = new THREE.Mesh(geometry, material);
+      mesh.position.x = (Math.random() - 0.5) * 12;
+      mesh.position.y = (Math.random() - 0.5) * 12;
+      mesh.position.z = (Math.random() - 0.5) * 12;
       mesh.rotation.x = Math.random() * Math.PI;
       mesh.rotation.y = Math.random() * Math.PI;
-      mesh.scale.setScalar(Math.random() * 0.8 + 0.2);
+      mesh.scale.setScalar(Math.random() * 1.0 + 0.5);
       scene.add(mesh);
       objects.push(mesh);
     }
