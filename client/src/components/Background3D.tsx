@@ -48,23 +48,39 @@ export default function Background3D() {
     // 파스텔 블루 톤 색상 사용
     const color = 0x80b0ff; // 파스텔 블루
 
-    // 5개의 다양한 3D 객체 생성
+    // 5개의 다양한 3D 객체 생성 - 더 넓게 분포
+    const positions = [
+      { x: -15, y: 5, z: -10 },
+      { x: 15, y: -8, z: -5 },
+      { x: 5, y: 12, z: -15 },
+      { x: -8, y: -10, z: -8 },
+      { x: 10, y: -5, z: -12 }
+    ];
+    
     for (let i = 0; i < 5; i++) {
       const geometry = geometries[i % geometries.length];
       const material = new THREE.MeshPhongMaterial({
         color: color,
         wireframe: true,
         transparent: true,
-        opacity: 0.8
+        opacity: 0.7
       });
       
       const mesh = new THREE.Mesh(geometry, material);
-      mesh.position.x = (Math.random() - 0.5) * 15;
-      mesh.position.y = (Math.random() - 0.5) * 15;
-      mesh.position.z = (Math.random() - 0.5) * 15;
+      mesh.position.x = positions[i].x;
+      mesh.position.y = positions[i].y;
+      mesh.position.z = positions[i].z;
       mesh.rotation.x = Math.random() * Math.PI;
       mesh.rotation.y = Math.random() * Math.PI;
-      mesh.scale.setScalar(Math.random() * 1.5 + 1.0); // 더 큰 크기로 조정
+      mesh.scale.setScalar(Math.random() * 1.2 + 1.0); // 균형 잡힌 크기
+      
+      // 각 객체에 초기 이동 방향과 속도 속성 추가
+      mesh.userData = { 
+        moveX: (Math.random() - 0.5) * 0.01,
+        moveY: (Math.random() - 0.5) * 0.01,
+        moveZ: (Math.random() - 0.5) * 0.005
+      };
+      
       scene.add(mesh);
       objects.push(mesh);
     }
@@ -74,13 +90,30 @@ export default function Background3D() {
       requestAnimationFrame(animate);
 
       objects.forEach((obj) => {
-        obj.rotation.x += 0.005;
-        obj.rotation.y += 0.01;
+        // 회전 움직임
+        obj.rotation.x += 0.003;
+        obj.rotation.y += 0.005;
+        
+        // 객체 위치 이동 (userData에 저장된 방향과 속도 사용)
+        obj.position.x += obj.userData.moveX;
+        obj.position.y += obj.userData.moveY;
+        obj.position.z += obj.userData.moveZ;
+        
+        // 화면 경계에 닿으면 방향 바꾸기
+        if (Math.abs(obj.position.x) > 18) {
+          obj.userData.moveX *= -1;
+        }
+        if (Math.abs(obj.position.y) > 15) {
+          obj.userData.moveY *= -1;
+        }
+        if (Math.abs(obj.position.z) > 18) {
+          obj.userData.moveZ *= -1;
+        }
       });
 
-      // 카메라 이동 애니메이션
-      camera.position.x = Math.sin(Date.now() * 0.0003) * 2;
-      camera.position.y = Math.cos(Date.now() * 0.0002) * 2;
+      // 카메라 이동 애니메이션 - 더 부드럽게
+      camera.position.x = Math.sin(Date.now() * 0.0002) * 3;
+      camera.position.y = Math.cos(Date.now() * 0.00015) * 2;
       camera.lookAt(scene.position);
 
       renderer.render(scene, camera);
