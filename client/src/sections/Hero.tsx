@@ -30,12 +30,18 @@ export default function Hero() {
             initial="hidden"
             animate="show"
           >
-            <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-900 leading-tight whitespace-nowrap"
-              variants={item}
-            >
-              <span className="text-primary">당신과 함께 꿈을 현실로,</span> {name}
-            </motion.h1>
+            <motion.div variants={item}>
+              <h1 
+                className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-900 leading-tight whitespace-nowrap"
+              >
+                <span className="text-primary">당신과 함께 꿈을 현실로,</span>
+              </h1>
+              <h1 
+                className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-900 leading-tight mt-2"
+              >
+                {name}
+              </h1>
+            </motion.div>
             
             <motion.p 
               className="text-xl md:text-2xl text-dark-700 font-light"
@@ -123,14 +129,13 @@ export default function Hero() {
               ].map((field, index) => (
                 <div 
                   key={index} 
-                  className="group relative cursor-pointer"
-                  onClick={() => {}}
+                  className="mb-5 bg-white/90 rounded-xl shadow-sm overflow-hidden transition-all hover:shadow-md"
                 >
-                  <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full z-10 relative hover:bg-primary/20 transition-colors">
+                  <div className="flex items-center gap-2 bg-primary/30 px-5 py-3 font-medium text-primary-foreground">
                     <span className="w-3 h-3 bg-primary rounded-full"></span>
-                    <span className="text-dark-700">{field.title}</span>
+                    <span>{field.title}</span>
                   </div>
-                  <div className="absolute top-full left-0 mt-2 bg-white p-4 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 w-64">
+                  <div className="p-4">
                     <p className="text-sm text-muted-foreground">{field.description}</p>
                   </div>
                 </div>
