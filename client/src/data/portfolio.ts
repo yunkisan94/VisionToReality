@@ -4,7 +4,7 @@ export const portfolioData = {
   intro: "저는 온라인 쇼핑몰, 부동산 매매/임대업, 가상자산 투자를 운영하는 다양한 분야의 사업가입니다. 새로운 기회를 발견하고 가치를 창출하는 것을 추구합니다.",
   tagline: "다양한 산업 분야에서 성공적인 사업과 투자를 운영하는 열정적인 기업가입니다.",
   philosophy: "\"지속 가능한 성장은 변화를 두려워하지 않는 용기에서 시작됩니다. 혁신을 추구하고, 가치를 창출하며, 어제보다 나은 내일을 만드는 것이 제 삶의 철학입니다.\"",
-  profileImage: "/images/profile.jpg",
+  profileImage: "https://images.unsplash.com/photo-1614846384571-1e31bf240102?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600",
   
   about: {
     title: "혁신적인 비즈니스를 구축하는",
