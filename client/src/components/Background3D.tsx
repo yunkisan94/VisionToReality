@@ -10,12 +10,12 @@ export default function Background3D() {
     // 씬, 카메라, 렌더러 설정
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
-      75, 
+      70, 
       window.innerWidth / window.innerHeight, 
       0.1, 
       1000
     );
-    camera.position.z = 5;
+    camera.position.z = 8; // 카메라 위치 조정하여 더 넓게 보이게
 
     const renderer = new THREE.WebGLRenderer({ 
       antialias: true,
@@ -25,24 +25,24 @@ export default function Background3D() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     containerRef.current.appendChild(renderer.domElement);
 
-    // 조명 설정
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    // 조명 설정 - 더 밝게
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
     scene.add(ambientLight);
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1.2);
     directionalLight.position.set(1, 1, 1);
     scene.add(directionalLight);
 
     // 3D 오브젝트 생성
     const objects: THREE.Mesh[] = [];
     
-    // 다양한 geometry 타입 배열
+    // 다양한 geometry 타입 배열 - 더 큰 크기로
     const geometries = [
-      new THREE.IcosahedronGeometry(1.3, 0),
-      new THREE.TorusGeometry(0.9, 0.3, 16, 100),
-      new THREE.OctahedronGeometry(1.2, 0),
-      new THREE.TetrahedronGeometry(2, 0), // 정사면체 크기 더 증가
-      new THREE.BoxGeometry(2, 2, 2)  // 정육면체 크기 더 증가
+      new THREE.IcosahedronGeometry(2.0, 0),
+      new THREE.TorusGeometry(1.8, 0.5, 16, 100),
+      new THREE.OctahedronGeometry(2.2, 0),
+      new THREE.TetrahedronGeometry(3.0, 0), // 정사면체 크기 더 증가
+      new THREE.BoxGeometry(3.0, 3.0, 3.0)  // 정육면체 크기 더 증가
     ];
     
     // 파스텔 블루 톤 색상 사용
@@ -142,7 +142,7 @@ export default function Background3D() {
   return (
     <div 
       ref={containerRef} 
-      className="fixed top-0 left-0 w-full h-full -z-10"
+      className="fixed top-0 left-0 w-full h-full z-0"
       style={{ pointerEvents: 'none' }}
     />
   );

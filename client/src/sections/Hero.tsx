@@ -21,7 +21,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-100 to-indigo-50">
+    <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-100/70 to-indigo-50/70 relative">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <motion.div 
