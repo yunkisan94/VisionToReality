@@ -83,7 +83,7 @@ export const portfolioData = {
   
   contact: {
     email: "yunkisan94@naver.com",
-    phone: "+82 10-3492-5790",
+    phone: "+82 0507-1371-7445",
     location: "서울특별시 마포구 서강로"
   },
   

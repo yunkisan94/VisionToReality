@@ -84,9 +84,9 @@ export default function Contact() {
     },
     { 
       icon: <MessageSquare className="text-primary h-6 w-6" />, 
-      title: "카카오톡", 
-      value: "ID: yunkisan94",
-      link: "https://open.kakao.com/o/yunkisan94"
+      title: "팩스", 
+      value: "+82 0504-231-5790",
+      link: ""
     },
     { 
       icon: <MapPin className="text-primary h-6 w-6" />, 
