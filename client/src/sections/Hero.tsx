@@ -128,14 +128,14 @@ export default function Hero() {
                   },
                   { 
                     title: "가상자산", 
-                    description: "크리에이티브힐에서의 STO 및 DeFi 사업 전략 수립 경험을 기반으로 가상자산 현물 및 선물 투자에 관한 전문적인 분석과 전략을 구사합니다.",
+                    description: "스타트업에서의 STO, DeFi 사업 전략 수립 경험을 기반으로 가상자산 현물 및 선물 투자에 관한 전문적인 분석과 전략을 구사합니다.",
                     color: "bg-accent/30",
                     iconColor: "bg-accent",
                     icon: "💰"
                   },
                   { 
                     title: "비즈니스 전략", 
-                    description: "트위니 전략기획팀 및 산업은행에서의 6년 경력을 통해 중장기 전략 수립, 신사업 발굴, 시장 분석 등 전략적 비즈니스 사고에 전문성을 갖추고 있습니다.",
+                    description: "AI스타트업 전략기획팀 및 금융공기업에서의 경력을 통해 중장기 전략 수립, 신사업 발굴, 시장 분석 등 전략적 비즈니스 사고에 전문성을 갖추고 있습니다.",
                     color: "bg-primary/10",
                     iconColor: "bg-primary",
                     icon: "📊"
