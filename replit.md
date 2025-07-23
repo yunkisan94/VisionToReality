@@ -103,6 +103,10 @@ This is a Korean language portfolio website for 윤기산 (Yoon Ki San), a busin
 
 Changelog:
 - June 19, 2025. Initial setup
+- January 23, 2025. Fixed compilation error and updated content:
+  - Fixed typo in portfolio data (Wep/app → Web/app)
+  - Updated Orpu description to reflect actual business (practical items vs digital products)
+  - Changed header message to more modest tone ("할 수 있는 것부터, 하나씩")
 
 ## User Preferences
 

@@ -75,7 +75,7 @@ export const portfolioData = {
     {
       title: "Orpu",
       description:
-        "디지털 제품과 가전제품을 중심으로 한 전문 온라인 스토어. 혁신적인 제품 큐레이션과 기술 지원 서비스 제공.",
+        "생활용품, 사무용품, 잡화 등을 판매하는 실용적인 온라인 스토어. 가성비 높은 제품 구성과 빠른 업데이트로 사용자 만족도를 높이고 있습니다.",
       image:
         "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
       technologies: ["제품 개발", "공급망 관리", "기술 지원"],
