@@ -17,7 +17,7 @@ export const portfolioData = {
     achievements: [
       "온라인 쇼핑몰 3개 성공적 운영",
       "전략기획 전문가 (6년 경력)",
-      "부동산 포트폴리오 구축",
+      "부동산 투자 및 관리 경험",
       "STO/DeFi 사업 전략 수립"
     ]
   },
@@ -38,7 +38,7 @@ export const portfolioData = {
     stats: [
       { value: "6+", label: "비즈니스 경력" },
       { value: "3+", label: "운영 중인 사업" },
-      { value: "5+", label: "부동산 거래경험" },
+      { value: "1개", label: "보유 중인 부동산 자산" },
       { value: "3+", label: "자격증 보유" }
     ]
   },

@@ -34,7 +34,7 @@ export default function Hero() {
               <h1 
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight whitespace-nowrap relative z-10"
               >
-                <span className="text-primary">실험적인 시도, 진짜 가능성을 찾아서</span>
+                <span className="text-primary">작은 시도에서 가능성을 발견합니다</span>
               </h1>
               <h1 
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mt-2 relative z-10"

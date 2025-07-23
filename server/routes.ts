@@ -2,6 +2,7 @@ import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { z } from "zod";
+import { sendContactEmail, type ContactFormData } from "./email";
 
 const contactFormSchema = z.object({
   name: z.string().min(2),
@@ -17,26 +18,27 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Validate the form data
       const validatedData = contactFormSchema.parse(req.body);
       
-      // In a real application, you would save this to a database
-      // or send an email. For this example, we'll just log it.
-      console.log("Contact form submission:", validatedData);
+      // Send email
+      await sendContactEmail(validatedData as ContactFormData);
       
       // Return success response
       res.status(200).json({ 
         success: true, 
-        message: "Message received successfully" 
+        message: "메시지가 성공적으로 전송되었습니다." 
       });
     } catch (error) {
+      console.error("Contact form error:", error);
+      
       if (error instanceof z.ZodError) {
         res.status(400).json({ 
           success: false, 
-          message: "Invalid form data", 
+          message: "잘못된 입력 데이터입니다.", 
           errors: error.errors 
         });
       } else {
         res.status(500).json({ 
           success: false, 
-          message: "Server error, please try again later" 
+          message: "이메일 전송에 실패했어요. 잠시 후 다시 시도해주세요." 
         });
       }
     }

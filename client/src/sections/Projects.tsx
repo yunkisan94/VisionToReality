@@ -35,7 +35,12 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="overflow-hidden h-full group">
+              <Card className={`overflow-hidden h-full group ${project.highlight ? 'ring-2 ring-primary shadow-lg border-primary/30' : ''}`}>
+                {project.highlight && (
+                  <div className="bg-gradient-to-r from-primary to-primary/80 text-white px-4 py-2 text-sm font-medium">
+                    🚀 최신 프로젝트
+                  </div>
+                )}
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image} 
@@ -54,7 +59,7 @@ export default function Projects() {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-dark-800 mb-2 group-hover:text-primary transition-colors">
+                  <h3 className={`text-xl font-bold mb-2 group-hover:text-primary transition-colors ${project.highlight ? 'text-primary' : 'text-dark-800'}`}>
                     {project.title}
                   </h3>
                   <p className="text-dark-700 mb-4">
@@ -65,7 +70,7 @@ export default function Projects() {
                       <Badge 
                         key={techIndex} 
                         variant="secondary" 
-                        className="bg-primary/10 text-primary hover:bg-primary/20"
+                        className={project.highlight ? 'bg-primary/20 text-primary hover:bg-primary/30' : 'bg-primary/10 text-primary hover:bg-primary/20'}
                       >
                         {tech}
                       </Badge>
