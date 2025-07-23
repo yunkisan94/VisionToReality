@@ -1,9 +1,9 @@
 export const portfolioData = {
   name: "윤기산",
   role: "사업가 & 투자자",
-  intro: "저는 전략기획 전문가로서 6년간의 경력을 바탕으로 온라인 쇼핑몰, 부동산 매매/임대업, 가상자산 투자를 운영하는 다양한 분야의 사업가입니다. 철저한 분석과 전략적 사고를 통해 새로운 기회를 발견하고 가치를 창출합니다.",
-  tagline: "전략기획과 신사업 개발의 전문성을 바탕으로 다양한 산업 분야에서 성공적인 사업과 투자를 운영하는 열정적인 기업가입니다.",
-  philosophy: "\"명확한 실행력과 계산된 위험을 감수하는 자세가 혁신의 핵심입니다. 기회를 포착하고 정확하게 실행할 때, 비로소 가능성은 현실이 됩니다.\"",
+  intro: "저는 분석과 실행을 좋아하는 사업가입니다. 쇼핑몰, 부동산, 가상자산 등 다양한 분야에서 사업과 투자를 실험하고 있어요. 복잡한 문제를 차분하게 풀고, 기회를 빠르게 실행으로 옮기는 것을 즐깁니다.",
+  tagline: "작은 아이디어에서 출발해, 현실을 바꾸는 일에 도전하고 있어요.",
+  philosophy: "\"실험적인 시도와 진짜 가능성을 찾는 것이 제 방식입니다. 작은 것부터 차근차근 실행하며 배우고 성장하는 과정을 소중히 여깁니다.\"",
   profileImage: "/profile.jpg",
   
   about: {
@@ -11,8 +11,8 @@ export const portfolioData = {
     subtitle: "사업가",
     image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000",
     paragraphs: [
-      "안녕하세요, 저는 윤기산입니다. 트위니 전략기획팀과 한국산업은행 등에서 쌓은 6년의 전략 기획 경력을 바탕으로 현재는 Witter, Orpu, Haute 세 개의 온라인 쇼핑몰을 운영하는 개인 사업자입니다. 기업 전략 수립 및 신사업 기획 경험을 활용하여 시장 변화에 빠르게 대응하는 비즈니스 모델을 구축하고 있습니다.",
-      "또한 투자자산운용사와 신용분석사 자격증을 기반으로 주거용/상업용 부동산 매매와 임대업을 체계적으로 운영하고 있으며, 크리에이티브힐에서의 STO 및 DeFi 사업 전략 수립 경험을 살려 가상자산 투자에도 전문성을 발휘하고 있습니다. 다양한 분야에서의 경험을 바탕으로 새로운 가치와 기회를 창출하는 것이 저의 비즈니스 철학입니다."
+      "안녕하세요, 저는 윤기산입니다. 트위니 전략기획팀과 한국산업은행에서 6년간 경험을 쌓은 후, 지금은 Witter, Orpu, Haute 세 개의 온라인 쇼핑몰을 운영하고 있어요. 기업에서 배운 전략적 사고를 개인 사업에 적용하며 조금씩 성장시켜 나가고 있습니다.",
+      "투자자산운용사와 신용분석사 자격증을 갖고 있어서 부동산 매매와 임대업도 하고 있고, 크리에이티브힐에서 STO와 DeFi 업무를 했던 경험으로 가상자산 투자도 해보고 있어요. 여러 분야를 경험해보면서 새로운 것을 배우는 재미를 느끼고 있습니다."
     ],
     achievements: [
       "온라인 쇼핑몰 3개 성공적 운영",
@@ -44,6 +44,14 @@ export const portfolioData = {
   },
   
   projects: [
+    {
+      title: "GPT 기반 심리 분석 앱 \"왜저랩(Why tho?)\"",
+      description: "사용자 맞춤형 심리 분석 질문 생성 및 결과 리포트 제공. GPT API, Stripe 결제, 캐릭터 성장 시스템, Notion 로그 연동. Replit + Capacitor 기반으로 Android 앱으로 배포하여 Google Play Console에 AAB 등록 및 비공개 테스트 진행 중.",
+      image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      technologies: ["GPT API", "Stripe 결제", "Android 앱", "Capacitor", "심리 분석"],
+      url: "#",
+      highlight: true
+    },
     {
       title: "Witter",
       description: "패션과 라이프스타일 제품을 판매하는 프리미엄 온라인 쇼핑몰. 독특한 고객 경험과 고품질 제품으로 차별화.",
