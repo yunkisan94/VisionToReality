@@ -36,9 +36,9 @@ export const portfolioData = {
       { name: "재무 계획", level: 85 }
     ],
     stats: [
-      { value: "6+", label: "비즈니스 경력 연수" },
+      { value: "6+", label: "비즈니스 경력" },
       { value: "3+", label: "운영 중인 사업" },
-      { value: "5+", label: "부동산 자산" },
+      { value: "5+", label: "부동산 거래경험" },
       { value: "3+", label: "자격증 보유" }
     ]
   },
