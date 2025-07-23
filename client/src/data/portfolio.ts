@@ -1,8 +1,8 @@
 export const portfolioData = {
   name: "윤기산",
-  role: "사업가 & 투자자",
+  role: "사업자 & 투자자",
   intro:
-    "저는 분석과 실행을 좋아하는 사업가입니다. 쇼핑몰, 부동산, 가상자산 등 다양한 분야에서 사업과 투자를 실험하고 있어요. 복잡한 문제를 차분하게 풀고, 기회를 빠르게 실행으로 옮기는 것을 즐깁니다.",
+    "저는 분석과 실행을 좋아하는 사업자입니다. 쇼핑몰, 부동산, 가상자산 등 다양한 분야에서 사업과 투자를 실험하고 있어요. 복잡한 문제를 차분하게 풀고, 기회를 빠르게 실행으로 옮기는 것을 즐깁니다.",
   tagline: "작은 아이디어에서 출발해, 현실을 바꾸는 일에 도전하고 있어요.",
   philosophy:
     '"실험적인 시도와 진짜 가능성을 찾는 것이 제 방식입니다. 작은 것부터 차근차근 실행하며 배우고 성장하는 과정을 소중히 여깁니다."',
@@ -10,7 +10,7 @@ export const portfolioData = {
 
   about: {
     title: "전략적 사고로 미래를 설계하는",
-    subtitle: "사업가",
+    subtitle: "사업자와 투자자",
     image:
       "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000",
     paragraphs: [
@@ -78,7 +78,7 @@ export const portfolioData = {
         "생활용품, 사무용품, 잡화 등을 판매하는 실용적인 온라인 스토어. 가성비 높은 제품 구성과 빠른 업데이트로 사용자 만족도를 높이고 있습니다.",
       image:
         "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      technologies: ["제품 개발", "공급망 관리", "기술 지원"],
+      technologies: ["제품 기획", "공급망 관리", "운영 지원"],
       url: "#",
     },
     {

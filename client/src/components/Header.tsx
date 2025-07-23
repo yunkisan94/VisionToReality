@@ -42,7 +42,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="#home">
           <a className="text-2xl font-bold text-primary flex items-center gap-2 cursor-pointer">
-            비전을 현실로
+            작은 기회를 현실로
           </a>
         </Link>
         
