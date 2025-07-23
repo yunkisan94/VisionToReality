@@ -22,7 +22,7 @@ export default function Projects() {
             <span className="inline-block pb-2 border-b-4 border-primary">비즈니스 포트폴리오</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-            다양한 산업 분야에서의 혁신적인 비즈니스 활동을 소개합니다.
+            여러 분야에서 진행하고 있는 비즈니스 활동들을 소개해드릴게요.
           </p>
         </motion.div>
         

@@ -54,7 +54,7 @@ export default function Contact() {
       
       toast({
         title: "메시지가 전송되었습니다!",
-        description: "빠른 시일 내에 답변 드리겠습니다.",
+        description: "빠른 시일 내에 답변드릴게요.",
       });
       
       form.reset();
@@ -110,7 +110,7 @@ export default function Contact() {
             <span className="inline-block pb-2 border-b-4 border-primary">연락하기</span>
           </h2>
           <p className="mt-4 text-lg text-dark-700 max-w-3xl mx-auto">
-            프로젝트 문의나 질문이 있으시면 연락 주세요.
+            프로젝트 문의나 궁금한 게 있으시면 언제든 연락주세요.
           </p>
         </motion.div>
         

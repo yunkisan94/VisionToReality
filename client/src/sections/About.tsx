@@ -33,7 +33,7 @@ export default function About() {
             <span className="inline-block pb-2 border-b-4 border-primary">나에 대해서</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-            저를 더 잘 알 수 있도록 제 이야기를 소개합니다.
+            저를 더 잘 알 수 있도록 제 이야기를 소개해드릴게요.
           </p>
         </motion.div>
         
