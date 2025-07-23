@@ -114,7 +114,7 @@ export default function Hero() {
                 {[
                   { 
                     title: "온라인 쇼핑몰", 
-                    description: "Witter, Orpu, Haute 세 개의 쇼핑몰을 성공적으로 운영하며 디지털 마케팅, 고객 경험 최적화, 시장 트렌드 분석 등의 전문성을 보유하고 있습니다.",
+                    description: "Witter, Orpu, Haute 세 개의 쇼핑몰을 운영하며 디지털 마케팅, 고객 경험 최적화, 시장 트렌드 분석 등의 스킬셋을 보유하고 있습니다.",
                     color: "bg-primary/20",
                     iconColor: "bg-primary",
                     icon: "🛍️"
@@ -135,7 +135,7 @@ export default function Hero() {
                   },
                   { 
                     title: "비즈니스 전략", 
-                    description: "AI스타트업 전략기획팀 및 금융공기업에서의 경력을 통해 중장기 전략 수립, 신사업 발굴, 시장 분석 등 전략적 비즈니스 사고에 전문성을 갖추고 있습니다.",
+                    description: "AI스타트업 전략기획팀 및 금융공기업에서의 경력을 통해 중장기 전략 수립, 신사업 발굴, 시장 분석 등 전략적 비즈니스 사고를 경험했습니다.",
                     color: "bg-primary/10",
                     iconColor: "bg-primary",
                     icon: "📊"
