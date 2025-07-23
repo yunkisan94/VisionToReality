@@ -176,7 +176,7 @@ export default function Skills() {
             <Card className="p-8 border-primary/20 shadow-md">
               <h3 className="text-xl font-bold text-foreground mb-6 flex items-center">
                 <Code className="h-5 w-5 text-primary mr-3" />
-                개발 기술
+                사업 스킬
               </h3>
               
               {skills.development.map((skill, index) => (
@@ -209,7 +209,7 @@ export default function Skills() {
             <Card className="p-8 border-accent/20 shadow-md">
               <h3 className="text-xl font-bold text-foreground mb-6 flex items-center">
                 <PaintbrushVertical className="h-5 w-5 text-accent mr-3" />
-                디자인 & 기타 기술
+                운영 & 세부 스킬
               </h3>
               
               {skills.design.map((skill, index) => (

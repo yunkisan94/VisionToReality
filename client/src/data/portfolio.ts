@@ -66,7 +66,7 @@ export const portfolioData = {
     {
       title: "Witter",
       description:
-        "패션이랑 라이프스타일 제품을 파는 프리미엄 온라인 쇼핑몰이에요. 독특한 고객 경험과 좋은 품질의 제품으로 차별화하고 있어요.",
+        "패션이랑 라이프스타일 제품을 판매하는 프리미엄 온라인 쇼핑몰이에요. 독특한 고객 경험과 좋은 품질의 제품으로 차별화하고 있어요.",
       image:
         "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
       technologies: ["이커머스", "디지털 마케팅", "고객 관리"],
@@ -84,7 +84,7 @@ export const portfolioData = {
     {
       title: "Haute",
       description:
-        "홈 인테리어랑 생활용품을 파는 프리미엄 온라인 스토어예요. 공간별 맞춤형 제품 큐레이션과 홈스타일링 서비스로 특별한 쇼핑 경험을 제공해요.",
+        "홈 인테리어랑 생활용품을 판매하는 프리미엄 온라인 스토어예요. 공간별 맞춤형 제품 큐레이션과 홈스타일링 서비스로 특별한 쇼핑 경험을 제공해요.",
       image:
         "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
       technologies: ["인테리어 솔루션", "홈스타일링", "맞춤형 서비스"],
